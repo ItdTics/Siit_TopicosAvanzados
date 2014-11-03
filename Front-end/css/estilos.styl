@@ -2,7 +2,8 @@
 	margin 0
 	padding 0	
 	box-sizing border-box
-	
+html,body
+	height 100%
 header
 	background-color #262626
 	color #fff
@@ -21,9 +22,13 @@ header
 		font-size 40px
 		color white
 		display none
+		
+		.bt-menu
+			cursor pointer
+				
 nav
-	width 20%
-	height 645px
+	width 15%
+	height 100%
 	float left
 	background-color #343434
 	
@@ -31,11 +36,11 @@ nav
 		color white
 		text-align center
 		.img_profile
-			margin 30px
-			margin-bottom 5px
-			height 140px
-			width 60%
-			border 5px solid #5f5e5c
+			margin 5% auto
+			width 180px
+			display block
+			height 180px
+			border 7px solid #5f5e5c
 		.id
 			font-size 17px
 		.welcome
@@ -44,25 +49,24 @@ nav
 		overflow hidden
 		list-style none
 		li 
-			float none
-			border-bottom 1px solid black
+			
+			border-bottom 1px solid #2b2b2b
 			a
 				font-size 18px
 				color white
 				padding 10px
 				display block
 				text-decoration none
-				border-left 5px solid white
+				border-left 7px solid #2b2b2b
 				span
 					margin-right 5px
 			a:hover
-				border-left 5px solid red
+				border-left 5px solid #f04f4f
 				span
 					margin-right 15px
 			
 .contenido
 	width 80%
-	height 100%
 	float left
 	padding 20px
 	div
@@ -72,10 +76,12 @@ nav
 		height 150px
 		.datos_sup
 			background-color #0089f1
-			height 30px
+			min-height 39px
+			line-height 38px
 			color white
-			padding 5px
+			padding 0 15px
 			box-shadow 0 0 0 black
+			
 			span
 				padding 10px
 @media screen and (max-width 1024px)
