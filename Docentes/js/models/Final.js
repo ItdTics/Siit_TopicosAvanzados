@@ -1,0 +1,1 @@
+Docentes.Models.Final = Backbone.Model.extend({});

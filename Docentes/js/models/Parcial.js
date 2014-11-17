@@ -1,0 +1,1 @@
+Docentes.Models.Parcial = Backbone.Model.extend({});

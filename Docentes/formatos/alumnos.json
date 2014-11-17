@@ -1,0 +1,107 @@
+[
+	{
+		"id_alumno": 1,
+		"nombre":"rocio solis serrano",
+		"no_control": "11089912",
+		"carrera": "ing.informatica"
+
+	},
+	{
+		"id_alumno": 2,
+		"nombre":"andres rodrguez soria",
+		"no_control": "11092344",
+		"carrera": "ing.sistemas"
+
+	},
+	{
+		"id_alumno": 3,
+		"nombre":"mario andrade dominguez",
+		"no_control": "11022444",
+		"carrera": "ing.Tic's"
+
+	},
+	{
+		"id_alumno": 4,
+		"nombre":"leonardo nagera garcia",
+		"no_control": "11204477",
+		"carrera": "ing.informatica"
+
+	},
+	{
+		"id_alumno": 5,
+		"nombre":"alejandra ugarte martinez",
+		"no_control": "11290822",
+		"carrera": "ing.sistemas"
+
+	},
+	{
+		"id_alumno": 6,
+		"nombre":"andrea vargas castro",
+		"no_control": "11220455",
+		"carrera": "ing.Tic's"
+
+	},
+	{
+		"id_alumno": 7,
+		"nombre":"corazon barrientos flores",
+		"no_control": "11041436",
+		"carrera": "ing.informatica"
+
+	},
+	{
+		"id_alumno": 8,
+		"nombre":"juan garza solis",
+		"no_control": "11021233",
+		"carrera": "ing.sistemas"
+
+	},
+	{
+		"id_alumno": 9,
+		"nombre":"sol arriaga flores",
+		"no_control": "11091333",
+		"carrera": "ing.Tic's"
+
+	},
+	{
+		"id_alumno": 10,
+		"nombre":"mario alejandro solares mendez",
+		"no_control": "11071344",
+		"carrera": "ing.sistemas"
+
+	},
+	{
+		"id_alumno":11,
+		"nombre":"carlos almazan soto",
+		"no_control": "11093377",
+		"carrera": "ing.informatica"
+
+	},
+	{
+		"id_alumno": 12,
+		"nombre":"carla mariana ripol castro",
+		"no_control": "11033344",
+		"carrera": "ing.sistemas"
+
+	},
+	{
+		"id_alumno": 13,
+		"nombre":"adriana simental perez",
+		"no_control": "11051344",
+		"carrera": "ing.Tic's"
+
+	},
+	{
+		"id_alumno": 14,
+		"nombre":"adrian vargas vargas",
+		"no_control": "11031355",
+		"carrera": "ing.sistemas"
+
+	},
+	{
+		"id_alumno": 15,
+		"nombre":"hugo contresas soto",
+		"no_control": "11031455",
+		"carrera": "ing.sistemas"
+
+	}
+]

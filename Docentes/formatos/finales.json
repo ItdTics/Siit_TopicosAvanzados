@@ -1,0 +1,35 @@
+[
+	{
+		"id_kardex":1,
+		"cal_final": 100,
+	},
+	{
+		"id_kardex":2,
+		"cal_final": 90,
+	},
+	{
+		"id_kardex":3,
+		"cal_final": 85,
+	},
+	{
+		"id_kardex":4,
+		"cal_final": 70,
+	},
+	{
+		"id_kardex":5,
+		"cal_final": 89,
+	},
+	{
+		"id_kardex":6,
+		"cal_final":100,
+	},
+	{
+		"id_kardex":7,
+		"cal_final": 100,
+	},
+	{
+		"id_kardex":8,
+		"cal_final": 90,
+	},
+	
+]

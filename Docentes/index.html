@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+ 	<link rel="stylesheet" href="css/estilos.css">
+ 	<link rel="stylesheet" href="css/fonts.css">
+ 	<link rel="stylesheet" href="css/tpl_estilos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SIIT</title>
+</head>
+<body>
+	<nav>
+		<div class="profile"> 
+		</div>
+		<ul>
+			<li><a href=""><span class="icon-house"></span>Inicio</a></li>
+			<li><a href="#grupos"><span class="icon-archive"></span>Grupos</a></li>
+			<li><a href="#calificaciones"><span class="icon-text"></span>Calificaciones</a></li>
+			<li><a href="#perfil"><span class="icon-vcard"></span>Perfil</a></li>
+			<li><a href="#documentos"><span class="icon-docs"></span>Documentos</a></li>
+		</ul>
+	</nav>
+	<header>
+		<div class="menu_bar">
+			<a class="bt-menu"><span class="icon-list"></span></a>
+		</div>
+		<a href="" title="Cerrar sesión"><span class="icon-logout"></span></a>
+	</header>
+	<section class="contenido">
+		
+	</section>
+	<!-- Templates-->
+	<script type="text/template" id="user">
+		<img src="img/no_image.jpg" alt="Perfil" class="img_profile">
+		<h3 class="welcome">Bievenido <%=nombre%> <%=apellido%></h3>
+	</script>
+	<script type="txt/templete" id="datos_index">
+		<div class="datos shadow">
+			<div class="datos_sup">
+				<h3><span class="icon-vcard"></span>Datos del usuario</h3>
+			</div>
+			<article class="datos_inf">
+				<h4>Nombre:<%=nombre%></h4>
+				<h4>Apellido:<%=apellido%></h4>
+				<h4>Departamento:<%=departamento%></h4>
+			</article>
+		</div>
+	</script>
+	<script type="text/template" id="calif_tpl" >
+		<h1 class="templates_titulo">Captura de calificaciones</h1>
+		<div class="table_grupos_tpl" >
+		</div>
+	</script>
+	<script type="text/template" id="grupos_tpl" >
+		<h1  class="templates_titulo">Grupos</h1>
+		<div class="table_grupos_tpl" >
+		</div>
+	</script>
+	<script type="text/template" id="tabla_grupos">
+		<div data-id=<%=id_grupo%> class="tpl_seccion_tabla shadow" >
+			<article data-id=<%=id_grupo%> class="tpl_titulo_grupo">
+				<h2 data-id=<%=id_grupo%>><%=grupo%></h2>
+			</article>
+			<article data-id=<%=id_grupo%>>
+				<h4 data-id=<%=id_grupo%>>Materia :<%=materia%></h4>
+				<h4 data-id=<%=id_grupo%>>Grupo :<%=id_grupo%></h4>
+				<h4 data-id=<%=id_grupo%>>Horario :<%=horario%></h4>
+				<h4 data-id=<%=id_grupo%>>Salón: <%=salon%></h4>
+				<h4 data-id=<%=id_grupo%>>Profesor: <%=id_profesor%></h4>
+			</article>
+		</div>
+	</script>
+	<script type="text/template" id="view_grupo">
+		<div class="tpl_viewGrupo_info">
+			<div class="tpl_viewGrupo_titulo ">
+				<h2><%=grupo%></h2>
+				<table class="tpl_viewGrupo_infoTable border">
+					<tr>
+						<td><h3>Horario: <%=horario%></h3></td>
+						<td><h3>Salon: <%=salon%></h3></td>
+						<td><h3>Materia: <%=materia%></h3></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="tpl_viewGrupo_tablaLista" id="tabla">
+			<table border=2 id="tpl_tabla_lista">
+				<tr>
+					<th>No. Control</th>
+					<th>Nombre</th>
+					<th>Carera</th>
+				</tr>
+			</table>
+		</div>
+		<a href="#calificaciones/<%=id_grupo%>"><button type="button" class="tpl_viewGrupo_btn" >Captura de Calificaciones</button></a>
+	</script>
+	<script type="text/template" id="alumnos_lista">
+			<td><%=no_control%></td>
+			<td><%=nombre%></td>
+			<td><%=carrera%></td>
+	</script>
+	<script type="text/template" id="tpl_captura">
+		<div class=" tpl_viewCaptura_info ">
+			<div class="tpl_viewGrupo_titulo ">
+				<h2><%=grupo%></h2>
+				<table class="tpl_viewGrupo_infoTable border">
+					<tr>
+						<td><h3>Horario: <%=horario%></h3></td>
+						<td><h3>Salon: <%=salon%></h3></td>
+						<td><h3>Materia: <%=materia%></h3></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="tpl_viewCaptura" id="tabla">
+			<form action="" id="form_calif">
+				<table id="tpl_capturaTabla" border="1">
+					<tr>
+						<th>No.Control</th>
+						<th>Nombre</th>
+						<th>U1</th>
+						<th>U2</th>
+						<th>U3</th>
+						<th>U4</th>
+						<th>U5</th>
+						<th>U6</th>
+						<th>U7</th>
+						<th>U8</th>
+						<th>Final</th>
+					</tr>
+				</table>
+				<input type="submit" id="enviar" value="Guardar">
+			</form>
+		</div>
+		<div class="show">
+			<h1 class="templates_titulo show">Por cuestiones de usabilidad hemos decidido bloquear esta funcionalidad para este tamaño de dispositivos. Disculpe las molestias</h1>
+		</div>
+	</script>
+	<script type="text/template" id="tpl_alumnos_captura">
+		
+		<td><%=no_control%></td>
+		<td width="300"><%=nombre%></td>
+		<td><input class="verificar" accesskey="" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u1"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u2"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u3"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u4"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u5"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u6"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u7"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="u8"title="Utilice numero entre 0 y 100" value="0"></td>
+		<td><input class="verificar final" type="text" size="1" pattern="[1-9]{0,1}+[0-9]{0,1}+[0-9]{0,1}" id="final"title="Utilice numero entre 0 y 100" value="0"></td>
+	</script>
+	<script type="text/template" id="tpl_perfil">
+		<form action="">
+			<div class="password">
+				<h1 class="templates_titulo">Cambiar contraseña</h1>
+				<table>
+					<tr>
+						<td>Nueva contraseña:</td>
+						<td><input id="pass"type="password" ></td>
+					</tr>
+					<tr>
+						<td>Confirmar contraseña:</td>
+						<td><input id="confirm_pass"type="password"></td>
+					</tr>
+				</table>
+				<h4 class="error_pass"></h4>
+				<input id="btn_confirmar"type="submit" value="Confirmar">
+			</div>
+		</form>
+	</script>
+	<script type="text/template" id="tpl_tabla_doc">
+		<h1 class="templates_titulo">Documentos</h1>
+		<table id="docs" border="2">
+		</table>
+	</script>
+	<script type="text/template" id="tpl_content_docs">
+		<tr>
+			<td><%=nombre%> <%=id_doc%></td>
+			<td><a href="<%=ruta%>">Descargar</a></td>
+		</tr>
+	</script>
+	<!-- Libs -->
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/vendor/menu.js"></script>
+	<script src="js/vendor/underscore.js"></script>
+	<script src="js/vendor/backbone.js"></script>
+	<script src="js/app.js"></script>
+	<!-- Modelos -->
+	<script src="js/models/Alumno.js"></script>
+	<script src="js/models/Datos.js"></script>
+	<script src="js/models/Doc.js"></script>
+	<script src="js/models/Final.js"></script>
+	<script src="js/models/Grupo.js"></script>
+	<script src="js/models/Parcial.js"></script>
+	<!-- Colecciones -->
+	<script src="js/collections/Docs.js"></script>
+	<script src="js/collections/Grupos.js"></script>
+	<script src="js/collections/Kardex.js"></script>
+	<script src="js/collections/Listas.js"></script>
+	<!-- Vistas -->
+	<script src="js/views/user.js"></script>
+	<script src="js/views/index.js"></script>
+	<script src="js/views/grupos.js"></script>
+	<script src="js/views/infoGrupo.js"></script>
+	<script src="js/views/table_grupos.js"></script>
+	<script src="js/views/OneGrupo.js"></script>
+	<script src="js/views/alumnos_lista.js"></script>
+	<script src="js/views/calif_titulo.js"></script>
+	<script src="js/views/calif_table.js"></script>
+	<script src="js/views/captura_calif.js"></script>
+	<script src="js/views/alumnos_captura.js"></script>
+	<script src="js/views/perfil.js"></script>
+	<script src="js/views/docs.js"></script>
+
+	<!-- Rutas -->
+	<script src="js/routes/router.js"></script>
+	</script>
+</body>
+</html>
