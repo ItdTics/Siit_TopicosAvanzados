@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<link rel="stylesheet" href="static/css/estilos.css">
+ 	<link rel="stylesheet" href="static/css/fonts.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SIIT</title>
+</head>
+<body>
+	<nav>
+		<div class="profile">
+			<img src="static/img/user.png" alt="Fotografía del estudiante" class="img_profile">
+			<span class="id">Recursos Financieros</span>
+			<h3 class="welcome">Bienvenido </h3>
+		</div>
+		<ul>
+			<li><a href=""><span class="icon-house"></span>Inicio</a></li>
+			<li><a href="#Inscripciones"><span class="icon-archive"></span>Inscripciones</a></li>
+			<li><a href="#Adeudos"><span class="icon-text"></span>Adeudos</a></li>
+			<li><a href="#Documentos"><span class="icon-text2"></span>Documentos</a></li>
+			<li><a href="#Consultas"><span class="icon-docs"></span>Consultas</a></li>
+		</ul>
+	</nav>
+	<header>
+		<div class="menu_bar">
+			<a class="bt-menu"><span class="icon-list"></span></a>
+		</div>
+		<a class="bt-menu"><span class="icon-logout"></span>Cerrar sesión</a>
+	</header>
+
+	<section id = "contenido"></section>
+
+<script type="text/x-handlebars-template" id="index-template">
+	<h1>INICIO</h1>
+</script>
+
+<script type="text/x-handlebars-template" id="docs-template">
+	<h1>DOCUMENTOS</h1>
+</script>
+
+<script type="text/x-handlebars-template" id="insc-template">
+	<h1>INSCRIPCIONES</h1>
+</script>
+
+<script type="text/x-handlebars-template" id="cons-template">
+	<h1>CONSULTAS</h1>
+</script>
+
+<script type="text/x-handlebars-template" id="ade-template">
+	<h1>ADEUDOS</h1>
+</script>
+
+		<script src="static/js/lib/jquery.min.js"></script>
+		<script src="static/js/lib/underscore-min.js"></script>
+		<script src="static/js/lib/backbone-min.js"></script>
+		<script src="static/js/lib/handlebars-v2.0.0.js"></script>
+
+		<script src="static/js/collections/RECFIN-v2.0.0.js"></script>
+		<script src="static/js/models/RECFIN-v2.0.0.js"></script>
+		<script src="static/js/routers/RECFIN-v2.0.0.js"></script>
+		<script src="static/js/views/insc-v2.0.0.js"></script>
+		<script src="static/js/views/Index-v2.0.0.js"></script>
+		<script src="static/js/views/docs-v2.0.0.js"></script>
+		<script src="static/js/views/cons-v2.0.0.js"></script>
+		<script src="static/js/views/ade-v2.0.0.js"></script>
+
+		<script src="static/js/menu.js"></script>
+		<script src="static/js/app.js"></script>
+</body>
+</html>

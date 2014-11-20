@@ -1,0 +1,142 @@
+*
+	margin 0
+	padding 0	
+	box-sizing border-box
+html,body
+	height 100%
+header
+	background-color #262626
+	color #fff
+	font-size 25px
+	width 100%
+	height 45px
+	display block
+	a
+		float right
+		padding 10px
+		margin 5px
+		font-size 18px
+		span
+			padding-right 5px
+.menu_bar
+		font-size 40px
+		color white
+		display none
+		
+		.bt-menu
+			cursor pointer
+				
+nav
+	width 15%
+	height 100%
+	float left
+	background-color #343434
+	
+	.profile 
+		color white
+		text-align center
+		.img_profile
+			margin 5% auto
+			width 180px
+			display block
+			height 180px
+			border 7px solid #5f5e5c
+		.id
+			font-size 17px
+		.welcome
+			font-size 20
+	ul
+		overflow hidden
+		list-style none
+		li 
+			
+			border-bottom 1px solid #2b2b2b
+			a
+				font-size 18px
+				color white
+				padding 10px
+				display block
+				text-decoration none
+				border-left 7px solid #2b2b2b
+				span
+					margin-right 5px
+			a:hover
+				border-left 5px solid #f04f4f
+				span
+					margin-right 15px
+			
+.contenido
+	width 80%
+	float left
+	padding 20px
+	div
+		box-shadow 10px 10px 5px #ccc
+	.datos
+		width 70%
+		height 150px
+		.datos_sup
+			background-color #0089f1
+			min-height 39px
+			line-height 38px
+			color #0089f1
+			padding 0 15px
+			box-shadow 0 0 0 black
+			
+			span
+				padding 10px
+@media screen and (max-width 1024px)
+	nav
+		width 40%
+		position fixed
+		left -100%
+		margin 0px
+		.profile
+			.img_profile
+				display block
+				width 50%
+				margin-left 25%
+	header
+		height 60px
+		font-size 40px
+	.menu_bar
+		display inline-block
+		a
+			font-size 40px
+	.contenido
+		padding 5px
+		div,section,article,aside
+			margin 15px
+		
+		.datos_sup
+			margin 0
+@media screen and (max-width 580px)
+	nav
+		width 80%
+		position fixed
+		left -100%
+		margin 0px
+		.profile
+			.img_profile
+				display block
+				width 50%
+				margin-left 25%
+	header
+		height 60px
+		font-size 40px
+	.menu_bar
+		display inline-block
+		a
+			font-size 40px
+	
+	.contenido
+		width 100%
+		padding 5px
+		div,section,article,aside
+			margin 15px
+			display block
+			width 95%
+		.datos
+			display block
+			width 95%
+		.datos_sup
+			margin 0

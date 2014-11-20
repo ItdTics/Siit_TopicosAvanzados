@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<link rel="stylesheet" href="css/estilos.css">
+ 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/oso.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SIIT</title>
+</head>
+<body>
+	<nav>
+		<div class="profile">
+			<img src="img/user.png" alt="Fotografía del estudiante" class="img_profile">
+			<span class="id">Recursos Financieros</span>
+			<h3 class="welcome">Bienvenido </h3>
+		</div>
+		<ul>
+			<li><a href="index.html"><span class="icon-house"></span>Inicio</a></li>
+			<li><a href="inscripciones.html"><span class="icon-archive"></span>Inscripciones</a></li>
+			<li><a href="adeudos.html"><span class="icon-text"></span>Adeudos</a></li>
+			<li><a href=""><span class="icon-text2"></span>Documentos</a></li>
+			<li><a href=""><span class="icon-docs"></span>Consultas</a></li>
+		</ul>
+	</nav>
+	<header>
+		<div class="menu_bar">
+			<a class="bt-menu"><span class="icon-list"></span></a>
+		</div>
+		<a class="bt-menu"><span class="icon-logout"></span>Cerrar sesión</a>
+	</header>
+	<section class="contenido">
+	
+	<div class="datos_sup">
+		<h2 class="titulo"> Inscripciones </h2>
+	<form id="form-order" >
+		
+		
+		<label class="inscrip" for="no_control"  >No De Control </label>
+		<p>
+		<input class="in" type="text" maxlength="8"  name="no_control" id="no_control" placeholder="11041402"/>
+		</p>
+		
+		<label class="inscrip" for="name">Nombre obligatorio</label>
+		<p>
+		<input class="in" type="text" name="name" id="name" placeholder="Juan Perez" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="periodo">Periodo </label>
+		<p>
+		<select class="in">
+		<option value="ene_jun">ENE-JUN
+		<option value="ago_dic">AGO-DIC
+		</select>
+		</p>
+		<p></p>
+		<p></p>
+		
+		<label class="inscrip" for="autoriza"> Adeuda </label> 
+		<input class="radis" type="Radio" name="pago" value= "pago" >
+		<label class="inscrip" for="autoriza"> No adeuda </label> 
+		<input class="radis" type="Radio" name="pago" value= "pago" >
+		<p>
+		<input class="in" type="submit" value="Enviar">
+		</p>
+		
+	</form>
+	</div>
+	
+	</section>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+</html>
