@@ -1,4 +1,4 @@
-var RF={
+var RF ={
     Models: {},
     Views: {},
     Collections:{},

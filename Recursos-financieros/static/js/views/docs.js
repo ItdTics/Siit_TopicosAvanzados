@@ -1,6 +1,6 @@
-RF.Views.docs = Backbone.View.extend({
+RF.Views.Docs = Backbone.View.extend({
 	template: Handlebars.compile($("#docs-template").html()), /* cambiar template*/
-	el: "#contenido",
+	    el: $("#contenido"),
 
 	render: function(modelo){
 		this.$el.html( this.template(modelo.toJSON()));

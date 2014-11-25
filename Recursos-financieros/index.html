@@ -31,41 +31,173 @@
 
 	<section id = "contenido"></section>
 
+<!-- ++++++++++++++++++++++++++++ template +++++++++++++++++++++++++++++++-->
+
 <script type="text/x-handlebars-template" id="index-template">
 	<h1>INICIO</h1>
 </script>
 
-<script type="text/x-handlebars-template" id="docs-template">
-	<h1>DOCUMENTOS</h1>
+<!-- ++++++++++++++++++++++++++++ template +++++++++++++++++++++++++++++++-->
+
+<script type="text/x-handlebars-template" id="docs-template">  
+	<section class="contenido">
+		<h2 class="titulo"><span class="icon-vcard"></span> Documentos </h2>
+	
+	<form id="form-order" >
+		<label class="inscrip" for="no_control"  >Clave documento </label>
+		<p>
+		<input class="in" type="text" maxlength="4"  name="no_control" id="no_control" placeholder="0000" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="no_control_alumno"  >No Control Alumno </label>
+		<p>
+		<input class="in" type="text" maxlength="8"  name="no_control" id="no_control" placeholder="11041402" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="name">Nombre obligatorio</label>
+		<p>
+		<input class="in" type="text" name="name" id="name" placeholder="Juan Perez" autofocus autocomplete required>
+		</p>
+		
+		<p></p>
+		<p></p>
+		<p>
+		<input class="in" type="button" name="imprimir" value="Imprimir" onclick="window.print();">
+		</p>	
+	</form>
+	</section>
 </script>
+
+<!-- ++++++++++++++++++++++++++++ template +++++++++++++++++++++++++++++++-->
 
 <script type="text/x-handlebars-template" id="insc-template">
-	<h1>INSCRIPCIONES</h1>
+<section class="contenido">
+	
+		<h2 class="titulo"><span class="icon-vcard"></span> Inscripciones </h2>
+
+	<form id="form-order" >
+		
+		
+		<label class="inscrip" for="no_control"  >No De Control </label>
+		<p>
+		<input class="in" type="text" maxlength="8"  name="no_control" id="no_control" placeholder="11041402" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="name">Nombre obligatorio</label>
+		<p>
+		<input class="in" type="text" name="name" id="name" placeholder="Juan Perez" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="periodo">Periodo </label>
+		<p>
+		<select class="in">
+		<option value="ene_jun">ENE-JUN
+		<option value="ago_dic">AGO-DIC
+		</select>
+		</p>
+		<p></p>
+		<p></p>
+		
+		<label class="inscrip" for="autoriza">Se Autoriza el pago</label> 
+		<input class="radis" type="Radio" name="pago" value= "pago" >
+		<p>
+		<input class="in" type="submit" value="Enviar">
+		</p>
+	</form>
+	</section>
 </script>
+
+<!-- ++++++++++++++++++++++++++++ template +++++++++++++++++++++++++++++++-->
 
 <script type="text/x-handlebars-template" id="cons-template">
-	<h1>CONSULTAS</h1>
+<section class="contenido">
+	
+		<h2 class="titulo"><span class="icon-vcard"></span> Consultas</h2>
+	
+	<form id="form-order" >
+		
+		
+		<label class="inscrip" for="no_control"  >No Control Personal</label>
+		
+		<input class="in" type="text" maxlength="8"  name="no_control" id="no_control" placeholder="44593299" autofocus autocomplete required>
+		
+		<label class="inscrip" for="no_control"  >No de Consulta</label>
+		<SELECT class="in" name="lista1">
+		<OPTION>Consulta 1
+		<OPTION>Consulta 2
+		<OPTION>Consulta 3
+		</SELECT>
+		<p></p>
+		<input class="in" type="submit" value="Procesar">
+		<p></p>
+		<p>
+		<input class="in" type="button" name="imprimir" value="Imprimir" onclick="window.print();">
+		</p>
+	</form>
+	</section>
 </script>
+
+<!-- ++++++++++++++++++++++++++++ template +++++++++++++++++++++++++++++++-->
 
 <script type="text/x-handlebars-template" id="ade-template">
-	<h1>ADEUDOS</h1>
+<section class="contenido">
+	
+		<h2 class="titulo"><span class="icon-vcard"></span> Adeudos </h2>
+
+	<form id="form-order" >
+		
+		
+		<label class="inscrip" for="no_control"  >No De Control </label>
+		<p>
+		<input class="in" type="text" maxlength="8"  name="no_control" id="no_control" placeholder="11041402" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="name">Nombre obligatorio</label>
+		<p>
+		<input class="in" type="text" name="name" id="name" placeholder="Juan Perez" autofocus autocomplete required>
+		</p>
+		
+		<label class="inscrip" for="periodo">Periodo </label>
+		<p>
+		<select class="in">
+		<option value="ene_jun">ENE-JUN
+		<option value="ago_dic">AGO-DIC
+		</select>
+		</p>
+		<p></p>
+		<p></p>
+		
+		<label class="inscrip" for="autoriza"> Adeuda </label> 
+		<input class="radis" type="Radio" name="pago" value= "pago" >
+		<label class="inscrip" for="autoriza"> No adeuda </label> 
+		<input class="radis" type="Radio" name="pago" value= "pago" >
+		<p>
+		<input class="in" type="submit" value="Enviar">
+		</p>
+		
+	</form>
+	</section>
 </script>
 
-		<script src="static/js/lib/jquery.min.js"></script>
-		<script src="static/js/lib/underscore-min.js"></script>
-		<script src="static/js/lib/backbone-min.js"></script>
-		<script src="static/js/lib/handlebars-v2.0.0.js"></script>
+<!-- ++++++++++++++++++++++++++++ template +++++++++++++++++++++++++++++++-->
 
-		<script src="static/js/collections/RECFIN-v2.0.0.js"></script>
-		<script src="static/js/models/RECFIN-v2.0.0.js"></script>
-		<script src="static/js/routers/RECFIN-v2.0.0.js"></script>
-		<script src="static/js/views/insc-v2.0.0.js"></script>
-		<script src="static/js/views/Index-v2.0.0.js"></script>
-		<script src="static/js/views/docs-v2.0.0.js"></script>
-		<script src="static/js/views/cons-v2.0.0.js"></script>
-		<script src="static/js/views/ade-v2.0.0.js"></script>
+		<script src="static/js/lib/handlebars-v2.0.0.js"></script>
+		<script src="static/js/lib/underscore-min.js"></script>
+		<!--<script src="static/js/lib/Backbone.js"></script>-->
+		<script src="static/js/lib/backbone-min.js"></script>
+		<script src="static/js/lib/jquery.min.js"></script>
+
+		
+		<script src="static/js/app.js"></script>
+		<script src="static/js/models/modelo.js"></script>
+		<script src="static/js/collections/colecciones.js"></script>
+		<script src="static/js/views/Index.js"></script>
+		<script src="static/js/views/insc.js"></script>
+		<script src="static/js/views/docs.js"></script>
+		<script src="static/js/views/cons.js"></script>
+		<script src="static/js/views/ade.js"></script>
+		<script src="static/js/routers/router.js"></script>
 
 		<script src="static/js/menu.js"></script>
-		<script src="static/js/app.js"></script>
 </body>
 </html>
