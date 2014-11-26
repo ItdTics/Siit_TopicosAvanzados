@@ -24,7 +24,7 @@ RF.RFRouter = Backbone.Router.extend({
 
     documentoss: function(){
         $("#contenido").html("");
-        var doss = new RF.Views.docs();
+        var doss = new RF.Views.Docs();
         $("#contenido").append(doss.render().el);
         console.log("cargo los documentoss");
         },
@@ -32,19 +32,19 @@ RF.RFRouter = Backbone.Router.extend({
 
     inscripcioness: function(){
         $("#contenido").html("");
-        var inss = new RF.Views.insc();
+        var inss = new RF.Views.Insc();
         $("#contenido").append(inss.render().el);
             },
 
     adeudoss: function(){
         $("#contenido").html("");
-        var adss = new RF.Views.ade();
+        var adss = new RF.Views.Ade();
         $("#contenido").append(adss.render().el);
             },
 
     consultarr: function(){
         $("#contenido").html("");
-        var corr = new RF.Views.cons();
+        var corr = new RF.Views.Cons();
         $("#contenido").append(corr.render().el);
             },
     });

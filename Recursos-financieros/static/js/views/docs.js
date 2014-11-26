@@ -3,7 +3,7 @@ RF.Views.Docs = Backbone.View.extend({
 	    el: $("#contenido"),
 
 	render: function(modelo){
-		this.$el.html( this.template(modelo.toJSON()));
+		this.$el.html( this.template());
 		return this;
 	}
 });

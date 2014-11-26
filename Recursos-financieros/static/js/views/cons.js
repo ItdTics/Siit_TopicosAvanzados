@@ -3,7 +3,7 @@ RF.Views.Cons=Backbone.View.extend({
     template: Handlebars.compile($("#cons-template").html()),
 
     render:function(modelo){
-        this.$el.html(this.template(this.model.toJSON()));
+        this.$el.html(this.template());
         return this;
     }
 });

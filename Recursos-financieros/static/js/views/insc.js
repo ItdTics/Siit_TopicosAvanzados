@@ -3,9 +3,8 @@ RF.Views.Insc=Backbone.View.extend({
 	template: Handlebars.compile($("#insc-template").html()),
 
 	render:function(modelo){
-        this.$el.html(this.template(this.model.toJSON()));
+        this.$el.html(this.template());
         return this;
     }
-  
-/*  el : "#contenido"  */
+
 });
