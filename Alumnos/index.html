@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 	<link rel="stylesheet" href="css/estilos.css">
+ 	<link rel="stylesheet" href="css/fonts.css">
+ 	<link rel="stylesheet" href="css/folder.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SIIT</title>
+	
+</head>
+<body>
+	<nav>
+		<div class="profile">
+			<img src="img/user.png" alt="Fotografía del estudiante" class="img_profile">
+			<span class="id">11040000</span>
+			<h3 class="welcome">Bievenido Usuario</h3>
+		</div>
+		<ul>
+			<li><a href="#"><span class="icon-house"></span>Datos Escolares</a></li>
+			<li><a href="#Kardex"><span class="icon-archive"></span>Kardex</a></li>
+			<li><a href="#Horario"><span class="icon-text"></span>Horario</a></li>
+			<li><a href="#Grupos"><span class="icon-text2"></span>Grupos cargados</a></li>
+			<li><a href="#Materias"><span class="icon-docs"></span>Selección de materías</a></li>
+			<li><a href="#Extraescolar"><span class="icon-docs"></span>Extraescolar</a></li>
+		</ul>
+	</nav>
+	<header>
+		<div class="menu_bar">
+			<a class="bt-menu"><span class="icon-list"></span></a>
+		</div>
+		<a class="bt-menu"><span class="icon-logout"></span>Cerrar sesión</a>
+	</header>
+	
+	
+
+	
+	
+	
+	
+	<!-- Carga de vistas-->
+	<section id = "contenido"></section>
+
+	<!-- Plantillas -->
+	<script type="text/x-handlebars-template" id="indexView">
+		<section class="contenido">
+			<div class="datos">
+				<div class="datos_sup">
+					<h3><span class="icon-vcard"></span>Datos del usuario</h3>
+				</div>
+				<div class="desc-mod">
+					<p>Edgar Eduardo Maldonado Herrera</p>
+					<p>11041392</p>
+				</div>	
+			</div>
+			<div class="semestre">
+				<div class="titulo_semestre">
+					<h2><span class="icon-vcard"></span>Semestre</h2>
+				</div>
+				<h3>7</h3>
+			</div>
+			<section class="reticulas">
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 1
+					</div>
+					<div class="materia">
+						<div class="infomat">
+							<p>Nombre Matería</p>
+							<p>Clabe</p>
+						</div>
+						<div class="info-c">3</div>
+						<div class="info-c">3</div>
+						<div class="info-c">3</div>
+					</div>
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 2
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 3
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 4
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 5
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 6
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 7
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 8
+					</div>
+					
+				</div>
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 9
+					</div>
+					
+				</div>
+			</section>
+		</section>
+	</script>
+	<script type="text/x-handlebars-template" id="horarioView">
+		<section class="contenido">
+			<div class="datos">
+				<div class="datos_sup">
+					<h3><span class="icon-vcard"></span>Horario</h3>
+				</div>
+			</div>
+			
+			<table width="629" border="1">
+			  <tr bgcolor="#0099CC">
+			    <td width="58">No. Control</td>
+			    <td width="286">Nombre del alumno</td>
+			    <td width="81">Semestre</td>
+			    <td width="98">Periodo escolar</td>
+			    <td width="72">Promedio</td>
+			  </tr>
+			  <tr>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			  </tr>
+			</table>
+			<br />
+			<table width="359" border="1">
+			  <tr>
+			    <td width="259" height="43" bgcolor="#0099CC">Carrera</td>
+			    <td width="84" bgcolor="#0099CC">Creditos Totales</td>
+			  </tr>
+			  <tr>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			  </tr>
+			</table>
+			<br />
+			<table width="703" border="1">
+			  <tr>
+			    <td width="204" height="33" bgcolor="#0099CC">Materias</td>
+			    <td width="54" bgcolor="#0099CC">Creditos</td>
+			    <td width="45" bgcolor="#0099CC">Grupo</td>
+			    <td width="70" bgcolor="#0099CC">Lunes</td>
+			    <td width="70" bgcolor="#0099CC">Martes</td>
+			    <td width="68" bgcolor="#0099CC">Miercoles</td>
+			    <td width="70" bgcolor="#0099CC">Jueves</td>
+			    <td width="70" bgcolor="#0099CC">Viernes</td>
+			  </tr>
+			  <tr>
+			    <td align="center" class="fondo_claro"><p>IT8831<br />
+			      REDES EMERGENTES<br />
+			    MARTINEZ REYES OCTAVIO SERGIO</p></td>
+			    <td class="fondo_claro">&nbsp;</td>
+			    <td class="fondo_claro">&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			    <td>&nbsp;</td>
+			  </tr>
+			</table>
+		</section>
+	</script>
+	<script type="text/x-handlebars-template" id="kardexView">
+		<section class="contenido">
+			<h2>Kardex</h2>
+		</section>
+	</script>
+		
+	<script type="text/x-handlebars-template" id="gruposView">
+		<section class="contenido">
+			<div class="datos">
+				<div class="datos_sup">
+					<h3><span class="icon-vcard"></span>Grupos</h3>
+				</div>
+			</div>
+			<section class="grupos">
+				<div class="semestre">
+					<div class="materia sem">
+						Semestre 1
+					</div>
+					<div class="materia">
+						<div class="infomat">
+							<p>Nombre Matería</p>
+							<p>Clabe</p>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<div class="app-folders-container">
+		   
+		        <div class='jaf-row jaf-container test'>
+		          <div class='folder' id='okcomputer'>
+		            <a href='#Grupos'>
+		              
+		              <p class='maestro'>Tópicos Avanzados de programación web</p>
+		              <p class='artist-name'>CLABE</p>
+		            </a>
+		          </div>
+		          <br class='clear'>
+		        </div>
+		  
+		    </div>
+
+		    <div class='folderContent okcomputer '>
+		      <div class='jaf-container'>
+		        <div class="btm">
+		         
+		          <h2>Roberto Lopez</h2>
+		          <h3 class="secondaryColor">hora</h3>
+		          
+		        </div>
+		        <div class="btm">
+		         
+		          <h2>Roberto Lopez</h2>
+		          <h3 class="secondaryColor">hora</h3>
+		          
+		        </div>
+		        <br class='clear'>
+		      </div>
+		      <a href="#Grupos" class="close">&times;</a>
+		    </div>
+		</section>
+	</script>
+	<script type="text/x-handlebars-template" id="materiasView">
+		<section class="contenido">
+			<h2>materias</h2>
+		</section>
+	</script>
+	<script type="text/x-handlebars-template" id="extraescolarView">
+		<section class="contenido">
+			<h2>Extraescolar</h2>
+		</section>
+	</script>
+
+	<!--Librerías-->
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/vendor/jquery.app-folders.js"></script>
+	<script src="js/vendor/handlebars-v2.0.0.js"></script>
+	<script src="js/vendor/underscore.js"></script>
+	<script src="js/vendor/backbone.js"></script>
+	
+
+	<!--App-->
+	<script src="js/app.js"></script>
+	<!--Vistas-->
+	<script src="js/views/inicio.js"></script>
+	<script src="js/views/kardex.js"></script>
+	<script src="js/views/horario.js"></script>
+	<script src="js/views/grupos.js"></script>
+	<script src="js/views/materias.js"></script>
+	<script src="js/views/extraescolar.js"></script>
+	<!--Rutas-->
+	<script src="js/routes/router.js"></script>
+	
+	<script src="js/vendor/menu.js"></script>	
+	<script src="js/folder.js"></script>	
+	
+
+	
+
+	
+</body>
+</html>

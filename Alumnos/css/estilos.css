@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+header {
+  background-color: #262626;
+  color: #fff;
+  font-size: 25px;
+  width: 100%;
+  height: 45px;
+  display: block;
+}
+header a {
+  float: right;
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+}
+header a span {
+  padding-right: 5px;
+}
+.menu_bar {
+  font-size: 40px;
+  color: #fff;
+  display: none;
+}
+.menu_bar .bt-menu {
+  cursor: pointer;
+}
+nav {
+  width: 15%;
+  height: 100%;
+  float: left;
+  min-width: 300px;
+  background-color: #343434;
+}
+nav .profile {
+  color: #fff;
+  text-align: center;
+}
+nav .profile .img_profile {
+  margin: 5% auto;
+  width: 180px;
+  display: block;
+  height: 180px;
+  border: 7px solid #5f5e5c;
+}
+nav .profile .id {
+  font-size: 17px;
+}
+nav .profile .welcome {
+  font-size: 20;
+}
+nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+nav ul li {
+  border-bottom: 1px solid #2b2b2b;
+}
+nav ul li a {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  border-left: 7px solid #2b2b2b;
+}
+nav ul li a span {
+  margin-right: 5px;
+}
+nav ul li a:hover {
+  border-left: 5px solid #f04f4f;
+}
+nav ul li a:hover span {
+  margin-right: 15px;
+}
+.semestre {
+  width: 24%;
+  display: inline-block;
+  color: #fff;
+  margin-left: 40px;
+}
+.semestre h3 {
+  font-size: 7em;
+  color: #f04f4f;
+  text-align: center;
+}
+.titulo_semestre {
+  background: #f04f4f;
+}
+.titulo_semestre h2 {
+  font-size: 1.1em;
+  padding: 2px 0 2px 15px;
+}
+.reticula {
+  width: 98%;
+  height: 300px;
+  margin-top: 35px;
+  background: #295bde;
+  color: #fff;
+}
+.contenido {
+  width: 76%;
+  float: left;
+  padding: 10px;
+}
+.datos{
+	box-shadow:  0 4px 7px #A7A7A7;
+}
+.contenido .datos {
+  width: 70%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+.contenido .datos .datos_sup {
+  background-color: #0089f1;
+  color: #fff;
+  padding: 2px 0 2px 15px;
+  box-shadow:  0 4px 7px #A7A7A7;
+}
+.desc-mod{
+	font-size: 14px;
+	display: block;
+	padding: 15px 35px;
+}
+.datos h3{
+	margin: 0px;
+}
+/*
+	-------------------------Reticula---------------------------------
+*/
+.semestre{
+	width: 165px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+}
+.info-c{
+	width: 53px;
+	background: red;
+	display: inline-block;
+	vertical-align: top;
+	margin-right:-2px ;
+	text-align: center;
+}
+.materia{
+	width: 100%;
+	background: #A7A7A7;
+}
+.cursando{
+	background:#0089f1 ;
+}
+.infomat{
+	padding: 10px;
+	text-align: center;
+}
+.sem{
+	text-align: center;
+	padding: 2px 0;
+	margin: 5px 0;
+	background: #0060A6;
+}
+.folder{
+	text-align: center;
+	 box-shadow:  0 4px 7px #A7A7A7;
+}
+.btm{
+	border-bottom: 1px solid #676767;
+}
+/*
+	-------------------------RESPONSIVE DESIGN---------------------------------
+*/
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 40%;
+    position: fixed;
+    left: -100%;
+    margin: 0px;
+  }
+  nav .profile .img_profile {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+  }
+  header {
+    height: 60px;
+    font-size: 40px;
+  }
+  .menu_bar {
+    display: inline-block;
+  }
+  .menu_bar a {
+    font-size: 40px;
+  }
+  .contenido {
+    padding: 5px;
+  }
+  .contenido div,
+  .contenido section,
+  .contenido article,
+  .contenido aside {
+    margin: 15px;
+  }
+  .contenido .datos_sup {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  nav {
+    width: 80%;
+    position: fixed;
+    left: -100%;
+    margin: 0px;
+  }
+  nav .profile .img_profile {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+  }
+  header {
+    height: 60px;
+    font-size: 40px;
+  }
+  .menu_bar {
+    display: inline-block;
+  }
+  .menu_bar a {
+    font-size: 40px;
+  }
+  .contenido {
+    width: 100%;
+    padding: 5px;
+  }
+  .contenido div,
+  .contenido section,
+  .contenido article,
+  .contenido aside {
+    margin: 15px;
+    display: block;
+    width: 95%;
+  }
+  .contenido .datos {
+    display: block;
+    width: 95%;
+  }
+  .contenido .datos_sup {
+    margin: 0;
+  }
+}
