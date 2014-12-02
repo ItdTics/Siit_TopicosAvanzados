@@ -1,0 +1,1 @@
+RecursosH.Models.Perfil =  Backbone.Model.extend({});

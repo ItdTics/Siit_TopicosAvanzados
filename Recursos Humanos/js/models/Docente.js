@@ -1,0 +1,1 @@
+RecursosH.Models.Docente = Backbone.Model.extend({});

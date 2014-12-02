@@ -1,0 +1,33 @@
+body{
+	background:#ffffff;
+	font-family:Arial;
+	margin:2;
+	}
+	
+	.titulo{
+	
+	color:#0089f1;
+	font: 150% sans-serif;
+	
+	}
+	
+	.inscrip{
+	font: menu;
+	color:black;
+	}
+	
+	.radi{
+	height:300px;
+	width:300px;
+	
+	}
+	.in{
+	height: 30px;
+    width: 200px;
+    background: #BDBDBD;
+    color: black;
+	font:  menu;
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.3);
+	background: -webkit-gradient(linear, center top, center bottom, from(#eee), to(#fff));
+	background-image: linear-gradient(#ededed, #fff);}
