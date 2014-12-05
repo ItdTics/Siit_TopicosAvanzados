@@ -1,0 +1,1 @@
+Coordinacion.Models.Grupo = Backbone.Model.extend({});

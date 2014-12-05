@@ -1,0 +1,1 @@
+Coordinacion.Models.Horario = Backbone.Model.extend({});

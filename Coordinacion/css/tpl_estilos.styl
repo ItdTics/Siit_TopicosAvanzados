@@ -1,0 +1,118 @@
+/////****ESTILOS DE LA PANTALLA DE GRUPOS ****/////
+.templates_titulo 
+	font-size 40px
+	text-align center
+
+.tpl_titulo_grupo
+	display block
+	text-align center
+	border-left 5px solid white
+	background #343434
+	color white
+	text-decoration none
+
+.tpl_titulo_grupo:hover
+	border-left 5px solid red
+	cursor pointer 
+	
+.table_grupos_tpl
+	max-width 300px
+	margin 0 auto
+	display block
+	
+.tpl_seccion_tabla
+	margin-bottom 15px
+	
+.tpl_seccion_tabla:hover
+	cursor pointer
+//////**** ESTILOS PARA LA PANTALLA DE UN SOLO GRUPO ****/////
+.tpl_viewGrupo_info
+	text-align center
+	display block
+	margin-bottom 25px
+	h2
+		width 100%
+		font-size 45px
+		color white
+		display block
+		background #343434	
+.tpl_viewGrupo_infoTable
+	width 100%
+	background white
+	color black
+#tpl_tabla_lista
+	width 100%
+	font-size 18px
+	border 2px solid #343434
+	th 
+		background #343434
+		color white
+	td 
+		font-weight bold
+.tpl_viewGrupo_btn
+	font-weight bold
+	margin 10px
+	padding 10px
+//////****ESTILOS PARA LA PANTALLA DE CAPTURA DE CADA GRUPO ****/////
+.tpl_viewCaptura_info
+	text-align center
+	display block
+	margin-bottom 25px
+	h2
+		width 100%
+		font-size 45px
+		color white
+		display block
+		background #343434
+#tpl_capturaTabla
+	width 100%
+	font-size 15px
+	border 2px solid #343434
+	th 
+		background #343434
+		color white
+	td 
+		font-weight bold
+		input
+			font-size 15px
+			border-color initial
+	.final
+		border 2px solid #006BC4			
+#enviar
+	font-size 18px 
+	font-weight bold
+	margin 15px
+	padding 0 5px
+.show
+	display none
+	
+.password
+	display block
+	text-align center
+	h1 
+		margin-bottom 60px
+	table 
+		margin 0 auto
+		margin-bottom 20px
+		input 
+			margin-bottom 10px
+.error_pass
+	color red
+	font-weight bold
+
+#docs
+	margin 0 auto
+	margin-top 20px
+	td
+		padding 10px
+
+@media screen and (max-width 650px)
+	.tpl_viewCaptura_info
+		div
+			display none
+	#tpl_capturaTabla
+		display none
+	#enviar
+		display none
+	.show
+		display block

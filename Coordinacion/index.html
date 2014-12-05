@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+ 	<link rel="stylesheet" href="css/estilos.css">
+ 	<link rel="stylesheet" href="css/fonts.css">
+ 	<link rel="stylesheet" href="css/tpl_estilos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SIIT</title>
+</head>
+<body>
+	<nav>
+		<div class="profile"> 
+		</div>
+		<ul>
+			<li><a href=""><span class="icon-house"></span>Inicio</a></li>
+			<li><a href="#horarios"><span class="icon-text"></span>Horarios</a></li>
+			<li><a href="#perfil"><span class="icon-vcard"></span>Perfil</a></li>
+			<li><a href="#documentos"><span class="icon-docs"></span>Documentos</a></li>
+		</ul>
+	</nav>
+	<header>
+		<div class="menu_bar">
+			<a class="bt-menu"><span class="icon-list"></span></a>
+		</div>
+		<a href="" title="Cerrar sesión"><span class="icon-logout"></span></a>
+	</header>
+	<section class="contenido">
+		
+	</section>
+	<!-----------------Template de bienvenida-------------------------------------------------->
+	<script type="text/template" id="user">
+		<img src="img/no_image.jpg" alt="Perfil" class="img_profile">
+		<h3 class="welcome">Bievenido <%=nombre%> <%=apellido%></h3>
+	</script>
+	<script type="txt/templete" id="datos_index">
+		<div class="datos shadow">
+			<div class="datos_sup">
+				<h3><span class="icon-vcard"></span>Datos del usuario</h3>
+			</div>
+			<article class="datos_inf">
+				<h4>Nombre:<%=nombre%></h4>
+				<h4>Apellido:<%=apellido%></h4>
+				<h4>Departamento:<%=departamento%></h4>
+			</article>
+		</div>
+	</script>
+		
+<!--------------------------------------Template de Horarios------------------------------------->
+<script type="text/template" id="tpl_horarios">
+nandito quite el reborujadero que tenia  aqui:/ 
+</script>
+
+<!-----------------------------------Template de perfil------------------------------------------>
+	<script type="text/template" id="tpl_perfil">
+		<form action="">
+			<div class="password">
+				<h1 class="templates_titulo">Cambiar contraseña</h1>
+				<table>
+					<tr>
+						<td>Nueva contraseña:</td>
+						<td><input id="pass"type="password" ></td>
+					</tr>
+					<tr>
+						<td>Confirmar contraseña:</td>
+						<td><input id="confirm_pass"type="password"></td>
+					</tr>
+				</table>
+				<h4 class="error_pass"></h4>
+				<input id="btn_confirmar"type="submit" value="Confirmar">
+			</div>
+		</form>
+	</script>
+	<!------------------------------Template de futuros documentos-------------------------------->
+	<script type="text/template" id="tpl_tabla_doc">
+		<h1 class="templates_titulo">Documentos</h1>
+		<table id="docs" border="2">
+		</table>
+	</script>
+	<script type="text/template" id="tpl_content_docs">
+		<tr>
+			<td><%=nombre%> <%=id_doc%></td>
+			<td><a href="<%=ruta%>">Descargar</a></td>
+		</tr>
+	</script>
+	<!------------------------------ Librerias -------------------------------->
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/vendor/menu.js"></script>
+	<script src="js/vendor/underscore.js"></script>
+	<script src="js/vendor/backbone.js"></script>
+	<script src="js/app.js"></script>
+	
+	<!------------------------------- Modelos --------------------------------------->
+	<script src="js/models/Datos.js"></script>
+	<script src="js/models/Doc.js"></script>
+	<script src="js/models/Horario.js"></script>
+	<script src="js/models/Grupo.js"></script>
+	<!------------------------------- Colecciones ----------------------------------->
+	
+	<script src="js/collections/Docs.js"></script>
+	<script src="js/collections/Horarios.js"></script>
+	
+	<!----------------------------------- Vistas ------------------------------------>
+	<script src="js/views/docs.js"></script>
+	<script src="js/views/grupo_lista.js"></script>
+	<script src="js/views/horarios.js"></script>
+	<script src="js/views/index.js"></script>
+	<script src="js/views/perfil.js"></script>
+	<script src="js/views/table_grupos.js"></script>
+	<script src="js/views/table_horarios.js"></script>
+	<script src="js/views/user.js"></script>
+
+	<!----------------------------------- Ruteo----------------------------------- -->
+	<script src="js/routes/router.js"></script>
+	</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+[
+	{ 
+		"id_grupo": 1,
+		"grupo": "1Q",
+		"horario": "07:00",
+		"id_profesor":1,
+		"salon": "UTD10", 
+		"id_lista": 1,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 2,
+		"grupo": "2Q",
+		"horario": "08:00",
+		"id_profesor":2,
+		"salon":"UTD7",
+		"id_lista": 2,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 3,
+		"grupo": "3Q",
+		"horario": "09:00",
+		"id_profesor":3,
+		"salon":"UTD7",
+		"id_lista": 1,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 4,
+		"grupo": "4Q",
+		"horario": "10:00",
+		"id_profesor":4,
+		"salon":"UTD7",
+		"id_lista": 2,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 5,
+		"grupo": "5Q",
+		"horario": "11:00",
+		"id_profesor":5,
+		"salon":"UTD7",
+		"id_lista": 5,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 6,
+		"grupo": "6Q",
+		"horario": "12:00",
+		"id_profesor":6,
+		"salon":"UTD7",
+		"id_lista": 2,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 7,
+		"grupo": "7Q",
+		"horario": "13:00",
+		"id_profesor":2,
+		"salon":"UTD7",
+		"id_lista": 1,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 8,
+		"grupo": "8Q",
+		"horario": "14:00",
+		"id_profesor": 8,
+		"salon":"UTD7",
+		"id_lista": 7,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 9,
+		"grupo": "9Q",
+		"horario": "15:00",
+		"id_profesor": 9,
+		"salon":"UTD7",
+		"id_lista": 9,
+		"materia": "TAPW"
+	},
+	{
+		"id_grupo": 10,
+		"grupo": "7AQ",
+		"horario": "16:00",
+		"id_profesor": 2,
+		"salon":"UTD7",
+		"id_lista": 1,
+		"materia": "TAPW"
+	}
+]

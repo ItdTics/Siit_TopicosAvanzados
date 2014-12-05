@@ -1,0 +1,52 @@
+[
+	{
+		"id_kardex": 1,
+		"cal": 100,
+		"unidad": "1",
+	},
+	{
+		"id_kardex":2,
+		"cal": 90,
+		"unidad": "1",
+	},
+	{
+		"id_kardex": 3,
+		"cal": 80,
+		"unidad": "2",
+	},
+	{
+		"id_kardex":4,
+		"cal": 75,
+		"unidad": "1",
+	},
+	{
+		"id_kardex":5,
+		"cal": 100,
+		"unidad": "1",
+	},
+	{
+		"id_kardex":6,
+		"cal": 90,
+		"unidad": "1",
+	},
+	{
+		"id_kardex": 7,
+		"cal": 100,
+		"unidad": "1",
+	},
+	{
+		"id_kardex":8,
+		"cal": 80,
+		"unidad": "1",
+	},
+	{
+		"id_kardex": 9,
+		"cal": 70,
+		"unidad": "1",
+	},
+	{
+		"id_kardex":10,
+		"cal": 100,
+		"unidad": "1",
+	},
+]

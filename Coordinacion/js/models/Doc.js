@@ -1,0 +1,1 @@
+Coordinacion.Models.Doc = Backbone.Model.extend({});

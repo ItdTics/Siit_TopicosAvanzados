@@ -1,0 +1,32 @@
+[
+	{
+		"id_doc": 1,
+		"nombre": "nombre del doc",
+		"ruta": "C://Documetos/itd"
+	},
+	{
+		"id_doc": 2,
+		"nombre": "nombre del doc",
+		"ruta": "C://Documetos/calificaciones"
+	},
+	{
+		"id_doc": 3,
+		"nombre": "nombre del doc",
+		"ruta": "C://Documetos/calificaciones_parciales"
+	},
+	{
+		"id_doc": 4,
+		"nombre": "nombre del doc",
+		"ruta": "C://Documetos/calificaciones_finales"
+	},
+	{
+		"id_doc": 5,
+		"nombre": "nombre del doc",
+		"ruta": "C://Documetos/listas"
+	},
+	{
+		"id_doc": 6,
+		"nombre": "nombre del doc",
+		"ruta": "C://Documetos/grupos"
+	}
+]
